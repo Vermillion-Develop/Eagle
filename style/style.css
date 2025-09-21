@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    /* border: green 1px solid; */
+    font-family: Calibri;
+    scroll-behavior: smooth;
+}
+p{
+    font-size: 18px;/*размер шрифта для всех p*/
+}
+h2{
+    font-size: 30px;/*размер шрифта для заголовков*/
+}
+
+/* header */
+header{
+    background: whitesmoke;
+    display: flex;
+    width: 100%;
+    padding: 1% 0;
+    position: sticky;
+    top: 0;
+}
+header div{
+    width: 75%;
+    padding-left: 5%;
+    color: gray;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    cursor: default;/*включение курсора при наведении стандартного*/
+}
+nav{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav a{
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;/*плавность наведения*/
+}
+nav a:hover{
+    color: rgb(49, 49, 49);
+    transition: 0.3s;
+}
+/* /header */
+
+/* section 1 */
+.eagle{
+    background: rgb(132, 208, 164);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+}
+.eagle_center{
+    width: 33%;
+    display: flex;/*гибкий дисплей*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+.eagle_center img{
+    border-radius: 50%;
+}
+.image_eagle{
+    width: 50%;
+    display:flex;
+    justify-content: center;
+    padding: 7.5% 0;
+}
+.image_eagle img{
+    width: 100%;
+}
+/* /section1 */
+
+/* section 2 */
+.text{
+    background: #474e5d;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5%;
+}
+.text p{
+    text-align: justify;
+    text-indent: 2%;
+    color: white;
+    padding-bottom: 2.5%;
+    width: 98%;
+}
+.aSearch{
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 0.5%;
+    width: 5%;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 1s;
+}
+.aSearch:hover{
+    background-color: rgb(63, 63, 63);
+    transition: 0.3s;
+}
+.aSearch:hover p{
+    color: white;
+    transition: 0.3s;
+}
+.aSearch:hover img{
+    filter: invert(1);/*инверсия цвета с серого на белый для телефона*/
+    transition: 0.3s;
+}
+.search{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%; 
+}
+.search img{
+    width: 25%;
+}
+.search p
+{
+    font-size: 1vw;
+    color: rgb(44, 44, 44);
+}
+.whoIm.section2{
+    padding: 5% 0 2.5%;
+    color: white;
+}
+/* /section 2 */
+
+/* section 3 */
+.article{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 5% 0 5%;
+    color: #474e5d; 
+}
+.text_image{
+    display: flex;
+    width: 32%;
+    flex-direction: column;
+    text-align: center;
+}
+.text_image img{
+    margin-top: 5%;
+    width: 100%;
+    border-radius: 5%;/*скруглил изображения, а то остроугольные некрасивые*/
+}
+.section3 h2{
+    text-align: center;
+    padding-top: 5%;
+    color: #474e5d;
+}
+/* /section 3 */
+
+/* footer */
+footer{
+    padding: 3% 0;
+    background: #333;
+    text-align: center;
+    color: white;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(153, 153, 244);
+}
+/* /footer */
